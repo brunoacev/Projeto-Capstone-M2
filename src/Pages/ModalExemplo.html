@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../Css/reset.css">
+    <link rel="stylesheet" href="../Css/ModalExemplo.css">
+    <title>modal</title>
+</head>
+<body>
+    <form class="modal">
+        <header class="modal__header">
+            <h3 class="modal__title">Criar hábito</h3>
+            <img class="modal__close" type="button" src="../assets/X.png" alt="close Icon">
+        </header>
+        <div class="box__actions title">
+            <span class="title">Título</span>
+            <label for="title"></label>
+            <input class="textArea title" type="text" name="content" id="title" cols="20" rows="10" placeholder="Digitar título"/>
+        </div>
+        <div class="box__actions description">
+            <span class="title">Descrição</span>
+            <label for="description"></label>
+            <textarea class="textArea description" type="text" name="content" id="description" cols="20" rows="10" placeholder="Digitar descrição"></textarea>
+        </div>
+        <div class="box__actions category">
+            <span class="title">Categoria</span>
+            <select class="textArea category" name="category"> 
+                <option value="estado">Selecionar Categoria</option> 
+                <option value="Saúde">Saúde</option> 
+                <option value="Estudos">Estudos</option> 
+                <option value="Casa">Casa</option> 
+                <option value="Trabalho">Trabalho</option> 
+                <option value="Lazer">Lazer</option> 
+            </select>
+        </div>
+        <button class="modal__submit" type="submit" name="modalData">Inserir</button>
+    </form>
+    <div class="container">
+        <button type="button" class="callModal">Modal</button>
+    </div>
+</body>
+</html>
