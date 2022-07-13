@@ -41,17 +41,30 @@ body {
     color: var(--blue-button);
 }
 
-.modal {
+
+
+.modal.creatHabit {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     width: 230px;
     height: 350px;
     background:#FFFFFF;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 10px;
-    gap: 3px;
+    gap: 24px;
+}
+
+.modal.editHabit {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 420px;
+    background:#FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    gap: 24px;
 }
 
 .modal__header {
@@ -73,12 +86,24 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:45px;
+    height:100%;
     gap: 1px;
+    margin-bottom:1px;
+}
+
+.box__actions.title {
+    height: 30px;
+    margin-bottom: 35px;
 }
 
 .box__actions.description {
-    height: 90px;
+    max-width: 100%;
+    max-height: 90px;
+    /* margin-bottom: 30px; */
+}
+
+.box__actions.URLDaImagemDoPerfil {
+    height: 67px;
 }
 
 .title {
@@ -86,7 +111,24 @@ body {
     color: #343A40;
 }
 
+.title.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title.checkbox {
+    width: 100%;
+    margin: 0;
+}
+
+.status__checkbox {
+    width: 10px;
+    height: 10px;
+}
+
 .textArea {
+    max-width: 90%;
+    max-height: 35px;
     outline: 0;
     background: #F1F3F5;
     border: none;
@@ -98,6 +140,23 @@ body {
 .textArea.description {
     font-family: 'Inter';
     font-style: normal;
+    max-height: 50px;
+}
+
+.status__checkbox{
+    width: 10px;
+}
+
+.container__box button {
+    display: flex;
+    gap: 3px;
+}
+
+.container__box button {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 3px;
 }
 
 .modal__submit {
@@ -106,4 +165,63 @@ body {
     background: var(--blue-button);
     padding: 5px;
     color: #fff;
+}
+
+.modal__submit.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    background: #F1F3F5;
+    color: #343A40;
+
+}
+
+.modal__submit.save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    background: #F1F3F5;
+    color: #343A40;
+
+}
+
+.modalEditProfile {
+    width: 450px;
+    height:240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 15px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+#tres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9px 18px;
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+}
+
+.botaoSalvarPerfil{
+    width: 43.7vh;
+    height: 7.0vh;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 600;
+    background: var(--blue-button);
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+fieldset{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
 }
