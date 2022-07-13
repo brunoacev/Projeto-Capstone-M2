@@ -15,7 +15,7 @@ export default class Render {
     fotoPerfil.src = Request.userAvatar;
     userName.innerText = Request.userName;
 
-    containerMenu.appendChild(fotoMenu);
+    // containerMenu.appendChild(fotoMenu);
     containerPerfil.appendChild(fotoPerfil);
   }
 
