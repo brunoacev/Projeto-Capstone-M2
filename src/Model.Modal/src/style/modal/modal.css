@@ -1,0 +1,350 @@
+:root {
+    --blue-button: #415AF3;
+}
+
+@keyframes jumping {
+    0% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.1); 
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.8);
+    background-color: var(--blue-button);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    gap: 0vh;
+}
+.callModal {
+    border: none;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    animation: jumping 2s infinite;
+    background-color: #fff  ;
+    color: var(--blue-button);
+}
+
+.modal {
+    display: absolute;
+    flex-direction: column;
+    width: 51vw;
+    height: 30vh;
+    background:#FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    gap: 0.5vh;
+}
+
+@media screen and (min-width: 400px){
+    .modal.creatHabit {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 20vh;
+        background:#FFFFFF;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        gap: 1.7vh;
+    }
+    
+    .modal.editHabit {
+        display: flex;
+        flex-direction: column;
+        width: 51vw;
+        height: 36vh;
+        background:#FFFFFF;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        gap: 1.2vh;
+    }
+    
+    .modal.editProfile {
+        display: flex;
+        flex-direction: column;
+        width: 51vw;
+        height: 20vh;
+        background:#FFFFFF;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        gap: 2.2vh;
+    }
+    
+    .modal.delete {
+        display: flex;
+        flex-direction: column;
+        width: 51vw;
+        height: 18vh;
+        background:#FFFFFF;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        gap: 2vh;
+    }
+}
+
+.modal.creatHabit {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 350px;
+    height: 30vh;
+    background:#FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    gap: 1.7vh;
+}
+
+
+
+.modal.editHabit {
+    display: flex;
+    flex-direction: column;
+    width: 51vw;
+    height: 36vh;
+    background:#FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    gap: 1.2vh;
+}
+
+.modal.editProfile {
+    display: flex;
+    flex-direction: column;
+    width: 51vw;
+    height: 20vh;
+    background:#FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    gap: 2.2vh;
+}
+
+.modal.delete {
+    display: flex;
+    flex-direction: column;
+    width: 51vw;
+    height: 18vh;
+    background:#FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    gap: 2vh;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.modal__title {
+    font-weight: 600;
+    font-size: 1.5vh;
+    line-height: 24px;
+}
+
+.modal__close {
+    width: 2.2vw;
+    height: 1vh;
+    margin-right: 3px;
+}
+
+.box__actions{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+    gap: 3px;
+    margin-bottom:1px;
+}
+
+.box__actions {
+    max-width: 100%;
+    height: 17%;
+}
+
+.box__actions.modal__editImg {
+    height: 15%;
+}
+
+.title {
+    font-size: 1vh;
+    color: #343A40;
+}
+
+.title.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title.checkbox {
+    width: 100%;
+    margin: 0;
+}
+
+.title.actionInforme{
+    font-size: 1.5vh;
+}
+
+.option.select{
+    font-size: 1vh;
+}
+
+.status__checkbox {
+    width: 10px;
+    height: 10px;
+}
+
+.textArea {
+    max-width: 100%;
+    max-height: 35px;
+    outline: 0;
+    background: #F1F3F5;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    resize: none;
+    margin-top: 3px;
+    font-size: 1vh;
+    margin-bottom: 2px;
+}
+
+.textArea.description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 1vh;
+    max-height: 2vh;
+    padding: 10px;
+}
+
+.textArea.category {
+    font-family: 'Inter';
+    font-style: normal;
+    max-height: 100%;
+    padding:5px;
+}
+
+.status__checkbox{
+    width: 10px;
+}
+
+.container__box button {
+    display: flex;
+    gap: 3px;
+}
+
+.container__box.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 3px;
+}
+
+.modal__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background: var(--blue-button);
+    padding: 10px 15px 10px 15px;
+    color: #fff;
+    width: 100%;
+    height: 2vh;
+    font-size: 1vh;
+}
+
+.modal__submit.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    background: #F1F3F5;
+    color: #343A40;
+    margin: 0px;
+
+}
+
+.modal__submit.save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vh;
+    background: #F1F3F5;
+    color: #343A40;
+    margin: 0;
+    background: var(--blue-button);
+    color: #fff;
+
+}
+
+.modal__submit.deleteConfirme {
+    background: #E64445;
+
+}
+
+.modalEditProfile {
+    width: 450px;
+    height:240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 15px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+#tres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9px 18px;
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+}
+
+.saveEdit{
+    width: 100%;
+    height: 7.0vh;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 600;
+    background: var(--blue-button);
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+fieldset{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    align-items: center;  
+    margin-top: 10px;
+}
