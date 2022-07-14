@@ -85,18 +85,13 @@ export default class Event {
 
     // Final Evento do CLick para receber os dados dos inputs, salvar na variavel dadosColetados e retornar a requisição.
 
-   
-
-    
+  
       // Inicio Evento do Click para receber dados dos inputs Editar Perfil e salvar na variavel Dados
 
-    const newUserProfileName = document.querySelector(".perfil__titulo")
-    
-
     const buttonSaveEditProfile = document.querySelector('.modal__submit')
-    
-    buttonSaveEditProfile?
+    const form = document.querySelector(".modal");
 
+    buttonSaveEditProfile?
     buttonSaveEditProfile.addEventListener("click", (event) => {
       event.preventDefault();
       let body = {}
@@ -115,6 +110,8 @@ export default class Event {
           localStorage.setItem("@kenzie-habits: NomeDeUsuario", body.newUserName)
           window.location.reload()
         }
+
+        Modals.bodyDocument.removeChild(form);
 
     })
     :buttonSaveEditProfile;
