@@ -313,6 +313,17 @@
   background-color: #3e8e41;
 }
 
+/* Inicio DropDown Media Querie */
+
+/* @media (max-width: 320px){
+  .dropdown {
+    margin-right: 50px;
+  }
+
+} */
+
+/* Final DropDown Media Querie */
+
 .modal-screen {
   display: none;
   position: fixed;
@@ -323,11 +334,319 @@
   background-color: var(--color-black-fade);
   justify-content: center;
   align-items: center;
+  
 }
 
 .modal-open {
   display: flex;
 }
+
+/* inicio Media Querie 320px com EventListner ao "click" do butão Criar!! */
+@media (max-width: 320px) {
+  .modal__Container {
+    display: none;
+    position: fixed;
+    width: 305px;
+    height: 470px;
+    left: 9px;
+    top: 29px;
+    background-color: #FFF;
+    border-radius: 10px;
+  }
+  
+  .form__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .form-header__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #212529;
+  }
+  
+  .section__container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin: 20px;
+    gap: 15px;
+  }
+  
+  .section__container label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #343A40;
+  }
+  
+  .section__container input[id="inputTitulo"] {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 18px;
+    gap: 10px;
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .section__container input[id="inputDescription"] {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 18px;
+    gap: 10px;
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .section__container select {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 18px;
+    gap: 10px;
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .section__inserirBtn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 50px;
+    gap: 10px;
+    position: absolute;
+    width: 277px;
+    height: 40px;
+    left: 14px;
+    top: 406px;
+    background: #415AF3;
+    border: 2px solid #415AF3;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .form__button--submit {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ADB5BD;
+    cursor: pointer;
+  
+  }
+  
+  #selectCategoria option {
+    width: 100px;
+  }
+}
+
+/* Final Media Querie 320px com EventListner ao "click" do butão Criar!! */
+
+/* Inicio Media Querie 321px com EventListner ao "click" do butão Criar!! */
+
+@media (min-width: 321px) {
+  .modal__Container {
+    display: block;
+    position: fixed;
+    width: 305px;
+    height: 470px;
+    left: 550px;
+    top: 114px;
+    background-color: #FFF;
+    border-radius: 10px;
+  }
+  
+  .form__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .form-header__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #212529;
+  }
+  
+  .section__container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin: 20px;
+    gap: 15px;
+  }
+  
+  .section__container label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #343A40;
+  }
+  
+  .section__container input[id="inputTitulo"] {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 18px;
+    gap: 10px;
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .section__container input[id="inputDescription"] {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 18px;
+    gap: 10px;
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .section__container select {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 18px;
+    gap: 10px;
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .section__inserirBtn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 50px;
+    gap: 10px;
+    position: absolute;
+    width: 277px;
+    height: 40px;
+    left: 14px;
+    top: 406px;
+    background: #415AF3;
+    border: 2px solid #415AF3;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .form__button--submit {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ADB5BD;
+    cursor: pointer;
+  
+  }
+  
+  #selectCategoria option {
+    width: 100px;
+  }
+}
+
+/* Final Media Querie 321px com EventListner ao "click" do butão Criar!! */
 
 @media (min-width: 460px) {
   .header__menu {

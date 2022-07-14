@@ -53,13 +53,36 @@
       </div>
       <button class="content__expand submit-button">Carregar mais</button>
     </main>
-    <div class="modal-screen">
+
+    <!-- Renderizar pelo DOM -->
+
+    
+    <div id="hide__container" class="modal__Container">
       <header class="form__header">
         <h3 class="form-header__title">Criar Hábito</h3>
-        <button class="form__button--submit"></button>
+        <span class="form__button--submit" id="buttonClose">X</span>
       </header>
-      <!-- renderização dos MODAIS -->
+      <section class="section__container">
+        <label for="inputTitulo">Titulo</label>
+        <input type="text" id="inputTitulo" placeholder="Digitar título">
+        <label for="inputDescription">Descrição</label>
+        <input type="text" id="inputDescription" placeholder="Digitar descrição">
+        <label for="selectCategoria">Categoria</label>
+        <select id="selectCategoria">
+          <option>Selecionar Categoria</option>
+          <option>Saúde</option>
+          <option>Estudos</option>
+          <option>Casa</option>
+          <option>Trabalho</option>
+          <option>Lazer</option>
+        </select>
+        <button class="section__inserirBtn" onclick="coletarDados()">Inserir</button>
+      </section>
     </div>
+
+    
+    <!-- Renderizar pelo DOM -->
     <script type="module" src="../Script/homepage.script.js"></script>
+    <script type="module" src="../Models/modal.models.js"></script>
   </body>
 </html>
