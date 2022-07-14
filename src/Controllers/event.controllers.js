@@ -102,6 +102,11 @@ export default class Event {
             body[key] = value;
         }
         
+        // body.newUrl
+        // console.log(body)
+
+        //faltano passar a nova URl para a API 
+        //Com a requisicao
      
         const modalScreen = document.querySelector(".modal-screen");
         modalScreen.classList.toggle("modal-open");
