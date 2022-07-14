@@ -113,9 +113,7 @@ export default class Event {
     })
     :buttonSaveEditProfile;
 
-    });
-
-  }
+  };
 
   static carregarMais(event){
     event.preventDefault()
